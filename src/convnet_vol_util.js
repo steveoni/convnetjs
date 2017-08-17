@@ -57,7 +57,7 @@
 
     // due to a Firefox bug
     try {
-      ctx.drawImage(img, 0, 0);
+      ctx.putImageData(img, 0, 0);
     } catch (e) {
       if (e.name === "NS_ERROR_NOT_AVAILABLE") {
         // sometimes happens, lets just abort
